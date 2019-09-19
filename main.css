@@ -1,0 +1,346 @@
+.outer
+{
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+}
+#page1
+{
+  background-image: url("download.webp");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s ease;
+  transform-origin: 50% 60%;
+  transform: scale(2);
+  position: absolute;
+  top: 0;
+
+  z-index: -1;
+  animation-name: bg;
+  animation-duration: 2s;
+}
+@keyframes bg
+{
+    0%{transform: scale(1);}
+    50%{transform: scale(1);}
+    100%{transform: scale(2);}
+}
+#page2
+{
+  background-image: url("wall4.jpg");
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100vh;
+  position: absolute;
+  top: 100vh;
+  box-sizing: border-box;
+}
+#page3
+{
+  background-image: url("wall3.jpg");
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100vh;
+  position: absolute;
+  top: 200vh;
+  box-sizing: border-box;
+}
+#page4
+{
+  background-image: url("wall.jpg");
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100vh;
+  position: absolute;
+  top: 300vh;
+  box-sizing: border-box;
+}
+.main
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+  height: 60px;
+}
+.main .x
+{
+  justify-content: flex-end;
+}
+.main a
+{
+  padding: 10px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  max-width: 100px;
+}
+#icon
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.m1
+{
+    margin-top: 70vh;
+}.m2
+{
+    margin-top: 80vh;
+}
+.main , .down a:hover
+{
+  color: lightgrey;
+  transition: 0.5s;
+}
+.main .car
+{
+  margin-left: 28vw;
+}
+.main .oth
+{
+  margin-left: auto;
+}
+.head
+{
+  display: block;
+  width:100vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.head .a1
+{
+  font-size: 2.5em;
+  color: white;
+  margin-top: 12vh;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+#index
+{
+  z-index: 4;
+  padding-bottom: 11px;
+  font-size: 1.2em;
+}
+img
+{
+  height: 50px;
+  width: auto;
+}
+.layout
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+.layout a
+{
+  padding: 12px 40px;
+  width: 180px;
+  margin-top: 4.5vh;
+  letter-spacing: 2px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50px;
+  font-size: 0.7em;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+}
+.layout a.s
+{
+    width:130px;
+}
+.layout a:first-child
+{
+  background-color: white;
+  color: black;
+  margin-right: 2vw;
+}
+.layout a:first-child:hover
+{
+  background-color: #f7f7f7;
+  transition: 0.5s;
+}
+.layout a:hover
+{
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+.footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  height: 10vh;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+}
+.footer a
+{
+  padding-left: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 0.7em;
+}
+.tn
+{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: fixed;
+  right: -300;
+  top: 0;
+  min-width:250px;
+  z-index: 3;
+  height: 105vh;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-around;
+  animation-duration: 0.5s;
+}
+.tn a
+{
+  padding: 15px 5px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #d6d6d6;
+  width: 95%;
+  max-height: 10px;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'gotham-medium';
+}
+.tn.res
+{
+  right: 0;
+  align-items: flex-start;
+  position: fixed;
+}
+.tn.res:first-child
+{
+  margin-top: 100px;
+}
+body
+{
+  margin: 0;
+  font-family: 'gotham-medium';
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+@font-face
+{
+  font-family: gotham-medium;
+  src: url("text/Gotham-Medium.otf");
+}
+@keyframes a
+{
+  from
+  {
+    right: -300;
+  }
+  to
+  {
+    right: 0;
+  }
+}
+@keyframes b
+{
+from
+{
+  display: flex;
+  right: 0;
+}
+  to
+  {
+    right: -300;
+  }
+}
+.down
+{
+  position:absolute;
+  left: 49.5vw;
+  bottom: 0;
+  display: block;
+  color: white;
+  font-size: 3em;
+  text-decoration: none;
+  cursor: pointer;
+  animation-name: osc;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes osc
+{
+  10%, 90% {transform: translate3d(0, -1px, 0);}
+
+  20%, 80% {transform: translate3d(0, 2px, 0);
+  }
+
+  30%, 50%, 70% {
+  transform: translate3d(0, -3px, 0);
+  }
+
+  40%, 60% {
+  transform: translate3d(0, 3px, 0);
+  }
+}
+.down a
+{
+  color: white;
+}
+#top
+{
+  position: fixed;
+  top: 0;
+  right: 10;
+  display: none;
+  cursor: pointer;
+  font-size: 3em;
+  text-decoration: none;
+}
+#top a
+{
+  color: white;
+}
+#back
+{
+  background-color: black;
+  opacity: 0.1;
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
