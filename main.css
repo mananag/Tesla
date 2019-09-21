@@ -33,22 +33,25 @@
 }
 #page2
 {
-  background-image: url("wall4.jpg");
   width: 100%;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: block;
   height: 100vh;
   position: absolute;
   top: 100vh;
   box-sizing: border-box;
 }
+.Myvideo
+{
+  object-fit: cover;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
 #page3
 {
-  background-image: url("wall3.jpg");
+
   width: 100%;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   display: block;
   height: 100vh;
   position: absolute;
@@ -57,9 +60,10 @@
 }
 #page4
 {
-  background-image: url("wall.jpg");
+  background-image: url("cq5dam.tinypng.1440.auto.jpg");
   width: 100%;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: block;
   height: 100vh;
@@ -132,8 +136,7 @@
   font-size: 2.5em;
   color: white;
   margin-top: 12vh;
-  letter-spacing: 2px;
-  font-weight: 700;
+  font-weight: 400;
 }
 #index
 {

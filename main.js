@@ -29,6 +29,17 @@ function pageScroll(x)
       window.scrollBy(0,1);
       setTimeout(function(){pageScroll(x)},1);
     }
+    else
+    {
+      for(var i=0; i<2; i++)
+      {
+        var vid = document.getElementsByClassName("myVideo")[i];
+        vid.currentTime = 0;
+        vid.pause();
+      }
+      if(x==1 || x==2){var vid = document.getElementsByClassName("myVideo")[x-1];
+      vid.play();}
+    }
     if(document.body.scrollTop >= height)
     {
       return;
@@ -45,6 +56,17 @@ function up(x)
     {
       window.scrollBy(0,-1);
       setTimeout(function(){up(x)},1);
+    }
+    else
+    {
+      for(var i=0; i<2; i++)
+      {
+        var vid = document.getElementsByClassName("myVideo")[i];
+        vid.currentTime = 0;
+        vid.pause();
+      }
+      var vid = document.getElementsByClassName("myVideo")[x-1];
+      vid.play();
     }
     if(document.body.scrollTop >= height)
     {
