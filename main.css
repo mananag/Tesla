@@ -16,20 +16,20 @@
   background-size: cover;
   background-position: center;
   transition: all 0.7s ease;
-  transform-origin: 50% 60%;
-  transform: scale(2);
+  transform-origin: 52% 60%;
+  transform: scale(2.15);
   position: absolute;
   top: 0;
-
   z-index: -1;
   animation-name: bg;
   animation-duration: 2s;
+  overflow: hidden;
 }
 @keyframes bg
 {
     0%{transform: scale(1);}
     50%{transform: scale(1);}
-    100%{transform: scale(2);}
+    100%{transform: scale(2.2);}
 }
 #page2
 {
@@ -173,6 +173,7 @@ img
 .layout a.s
 {
     width:130px;
+    font-family: gotham-book;
 }
 .layout a:first-child
 {
@@ -264,6 +265,11 @@ body
 {
   font-family: gotham-medium;
   src: url("text/Gotham-Medium.otf");
+}
+@font-face
+{
+  font-family: gotham-book;
+  src: url("text/Gotham-Book.otf");
 }
 @keyframes a
 {
