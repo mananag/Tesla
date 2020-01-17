@@ -1,28 +1,38 @@
 <html>
   <head>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel = "icon" type = "image/png" href = "ico.png">
+    <link rel = "icon" type = "image/png" href = "favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="gotham.css">
     <title>Electric Cars, Solar Panels & Clean Energy Sources</title>
   </head>
   <body>
+    <div class="nav-container">
+      <div class="nav-col" onclick="up(0)"><div class="nav-tab act"></div><div class="label">Tesla</div></div>
+      <div class="nav-col" onclick="Scroll(1)"><div class="nav-tab"></div><div class="label">power everything</div></div>
+      <div class="nav-col" onclick="Scroll(2)"><div class="nav-tab"></div><div class="label">tesla Accessories</div></div>
+      <div class="nav-col" onclick="pageScroll(3)"><div class="nav-tab" onclick="pageScroll(3)"></div><div class="label">model y</div></div>
+    </div>
+  <div class="whole">
   <div class="outer">
     <div id="page1">
 
     </div>
     <a id="icon"> <img src="icon.png"> </a>
     <div class="main">
-      <a href="#" > Model S </a>
+      <a href="models.html" > Model S </a>
       <a href="#"> Model 3 </a>
       <a href="#"> Model X </a>
       <a href="#"> Model Y </a>
       <a href="#"> Roadster </a>
       <a href="#"> Energy </a>
-      <a href="#"> SHOP </a>
-      <a href="#"> SIGN IN </a>
-      <a href="javascript:void(0);" onclick="Func()" id="index"> <i class="fa fa-bars" ></i> </a>
+      <div class="mainside">
+        <a href="#"> SHOP </a>
+        <a href="#"> SIGN IN </a>
+        <a href="javascript:void(0);" onclick="Func()" id="index"> <i class="fa fa-bars" ></i> </a>
+      </div>
     </div>
     <div class="head">
       <div class="a1"> Model 3 </div>
@@ -99,5 +109,6 @@
     <div id="back" ondblclick="Func()"></div>
     <div id="top" href="javascript:void(0)" onclick="up(0)">
         <a  class="fa fa-angle-up"></a>
-    </div>
+    </div></div>
+
     <script src="main.js" charset="utf-8"></script>

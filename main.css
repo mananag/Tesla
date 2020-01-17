@@ -1,3 +1,34 @@
+@media screen and (max-width: 900px)
+{
+  .mainside a:not(:last-child)
+  {
+	display: none;
+  }
+}
+@media screen and (max-width: 640px)
+{
+  .main a:not(:last-child)
+  {
+    display: none;
+  }
+  .layout
+  {
+    margin 50vh 0 0 0 ;
+    flex-direction: column;
+  }
+  .layout a
+  {
+    margin-top: 1vh;
+  }
+  .head
+  {
+    margin-bottom: 58vh;
+  }
+  .nav-col div
+  {
+    display: none;
+  }
+}
 .outer
 {
   height: 100vh;
@@ -6,13 +37,66 @@
   position: absolute;
   top: 0;
   display: block;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+.nav-container
+{
+  display: block;
+  left: 0;
+  margin-top: -78px;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 5;
+}
+.nav-col
+{
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  width: 20px;
+  padding-bottom: 0;
+  display: flex;
+  overflow: hidden;
+}
+.nav-col:hover
+{
+  width:300px;
+  transition: 0.1s;
+}
+.label
+{
+  width:400px;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.8em;
+  overflow: hidden;
+
+}
+.nav-tab
+{
+  height: 23px;
+  width: 0px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2px;
+  border: 1.5px solid white;
+  opacity: 0.1;
+}
+.act
+{
+  opacity: 1;
 }
 #page1
 {
   background-image: url("download.webp");
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-size: cover;
   background-position: center;
   transition: all 0.7s ease;
@@ -29,11 +113,11 @@
 {
     0%{transform: scale(1);}
     50%{transform: scale(1);}
-    100%{transform: scale(2.2);}
+    100%{transform: scale(2.15);}
 }
 #page2
 {
-  width: 100%;
+  width: 100vw;
   display: block;
   height: 100vh;
   position: absolute;
@@ -51,7 +135,7 @@
 #page3
 {
 
-  width: 100%;
+  width: 100vw;
   display: block;
   height: 100vh;
   position: absolute;
@@ -61,7 +145,7 @@
 #page4
 {
   background-image: url("cq5dam.tinypng.1440.auto.jpg");
-  width: 100%;
+  width: 100vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -78,10 +162,7 @@
   justify-content: center;
   flex-direction:row;
   height: 60px;
-}
-.main .x
-{
-  justify-content: flex-end;
+  width: 100vw;
 }
 .main a
 {
@@ -95,12 +176,40 @@
   font-size: 0.8em;
   max-width: 100px;
 }
+.mainside a
+{
+  padding: 10px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  max-width: 100px;
+}
+.mainside
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction:row;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 25px;
+}
 #icon
 {
   position: fixed;
   left: 0;
   top: 0;
   z-index: 3;
+}
+#icon img
+{
+  height: 60px;
 }
 
 .m1
@@ -155,12 +264,12 @@ img
   align-items: center;
   justify-content: center;
   padding-left: 10px;
+  margin-top: 4.5vh;
 }
 .layout a
 {
   padding: 12px 40px;
   width: 180px;
-  margin-top: 4.5vh;
   letter-spacing: 2px;
   color: white;
   border: 3px solid white;
@@ -260,16 +369,6 @@ body
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: black;
-}
-@font-face
-{
-  font-family: gotham-medium;
-  src: url("text/Gotham-Medium.otf");
-}
-@font-face
-{
-  font-family: gotham-book;
-  src: url("text/Gotham-Book.otf");
 }
 @keyframes a
 {
